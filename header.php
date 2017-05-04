@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
 
-    <title>Justified Nav Template for Bootstrap</title>
+    <title>CMS MARKET</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./home_files/bootstrap.min.css" rel="stylesheet">

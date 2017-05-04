@@ -19,13 +19,13 @@ session_start();
         ?>
         <button type="button" class="btn btn-lg btn-success" onclick="location.href = 'signin.php';">sign in</button>
         <button type="button" class="btn btn-lg btn-danger" onclick="<?php session_unset();?>" >sign out</button>
-        <button type="button" class="btn btn-lg btn-primary" onclick="location.href = 'signin.php';">create</button>
+        <button type="button" class="btn btn-lg btn-primary" onclick="location.href = 'creat.php';">create</button>
       </div>
 
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1>Marketing stuff!</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+        <h1>CMS example</h1>
+        <p class="lead">by use bootstrape and php and javascript </p>
         <p><a class="btn btn-lg btn-success" href="http://getbootstrap.com/examples/justified-nav/#" role="button">Get started today</a></p>
       </div>
 

@@ -7,6 +7,8 @@ if (isset($_POST['submit1'])){
     $query="Delete  FROM articles WHERE no=".$no;
     $insert=$mysqli->query($query);
   }
+$query="SELECT * FROM articles";
+$conn=$mysqli->query($query) or die('error_log(message)');
 
 
 ?>
@@ -14,6 +16,8 @@ if (isset($_POST['submit1'])){
 
     <div class="container">
 
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
       <div class="masthead">
         <h3 class="text-muted">connection</h3>
         <?php 
@@ -21,7 +25,7 @@ if (isset($_POST['submit1'])){
                echo $_SESSION ['user'];
         }
         ?>
-        <button type="button" class="btn btn-lg btn-danger" onclick="location.href='home.php'"" >sign out</button>
+        <button type="button" class="btn btn-lg btn-danger" onclick="location.href='home.php' " >sign out</button>
       </div>
 
       <!-- Jumbotron -->
@@ -45,10 +49,10 @@ if (isset($_POST['submit1'])){
             echo "
           <form method='POST' action='admin.php'>
               <tr>
-                <td><input type='text' name='nno' value=".$disp['no']."></td>
+                <td width=15%><input style='width:15%;' type='text' name='nno' value=".$disp['no']."></td>
                 <td>".$disp['title']."</td>
                 <td>".$disp['texta']."</td>
-                <td><input type='submit' name='submit1' class='btn btn-xs btn-danger' value='Delete' />
+                <td width=15%><input type='submit' name='submit1' class='btn btn-xs btn-danger' value='Delete' />
                   <input type='submit' name='submit2' class='btn btn-xs btn-info' value='Modify' /></td>
               </tr>
               </form>

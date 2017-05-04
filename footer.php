@@ -1,6 +1,6 @@
       <!-- Site footer -->
       <footer class="footer">
-        <p>© 2016 Company, Inc.</p>
+        <p>© 2017 CMS simplon</p>
       </footer>
 
     </div> <!-- /container -->
